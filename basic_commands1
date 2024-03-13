@@ -1,0 +1,30 @@
+CREATE TABLE friends (
+  id, INTEGER,
+  name, TEXT,
+  birthday, DATE
+);
+
+INSERT into friends (id, name, birthday)
+VALUES
+(1, 'Ororo Munroe','1940-05-30');
+
+INSERT into friends (id, name, birthday)
+VALUES
+(2, 'Kobe Bryant','2000-05-30');
+
+INSERT into friends (id, name, birthday)
+VALUES
+(3, 'Lebron James','1996-05-30');
+
+UPDATE friends 
+  Set name = 'Storm'
+  WHERE name = 'Ororo Munroe';
+
+ALTER TABLE friends
+ADD COLUMN email TEXT;
+
+
+DELETE from friends
+WHERE name = 'Storm';
+
+SELECT * FROM friends;
